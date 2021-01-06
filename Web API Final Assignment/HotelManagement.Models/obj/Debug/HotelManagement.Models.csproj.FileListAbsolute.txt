@@ -1,0 +1,6 @@
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\bin\Debug\HotelManagement.Models.dll
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\bin\Debug\HotelManagement.Models.pdb
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\obj\Debug\HotelManagement.Models.csprojAssemblyReference.cache
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\obj\Debug\HotelManagement.Models.csproj.CoreCompileInputs.cache
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\obj\Debug\HotelManagement.Models.dll
+D:\Gateway\Web API Final Assignment\HotelManagement.Models\obj\Debug\HotelManagement.Models.pdb
