@@ -51,11 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\HotelDBContext.cs" />
-    <Compile Include="Database\RoomDBContext.cs" />
+    <Compile Include="Database\DBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\HotelRepository.cs" />
     <Compile Include="Repository\IHotelRepository.cs" />
+    <Compile Include="Repository\IRoomRepository.cs" />
+    <Compile Include="Repository\RoomRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

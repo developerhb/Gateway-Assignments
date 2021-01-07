@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace HotelManagement.DAL.Repository
 {
-    public class HotelRepository : IHotelRepository
+    public class RoomRepository : IRoomRepository
     {
         private DBContext db = new DBContext();
 
-        public IQueryable<Hotel> GetAllHotels()
+        public IQueryable<Room> GetRooms()
         {
-            return db.Hotels;
+            return db.Rooms;
         }
 
-        public bool AddHotel(Hotel hotel)
+        public bool AddRoom(Room room)
         {
-            db.Hotels.Add(hotel);
+            db.Rooms.Add(room);
             return db.SaveChanges() > 0;
         }
     }

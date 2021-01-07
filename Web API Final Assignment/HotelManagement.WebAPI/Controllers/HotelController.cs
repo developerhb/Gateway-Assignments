@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace HotelManagement.WebAPI.Controllers
 {
@@ -18,16 +19,20 @@ namespace HotelManagement.WebAPI.Controllers
             _hotelManager = hotelManager;
         }
 
-        public List<Hotel> Get()
+        [ResponseType(typeof(List<Hotel>))]
+        public IHttpActionResult Get()
         {
-            return _hotelManager.GetAllHotels();
+            List<Hotel> hotels = _hotelManager.GetAllHotels();
+            if (hotels != null)
+                return Ok(hotels);
+            return NotFound();
         }
 
-        public string Post([FromBody]Hotel hotel)
+        public IHttpActionResult Post([FromBody]Hotel hotel)
         {
             if (_hotelManager.AddHotel(hotel))
-                return "Product Added";
-            return "Not added";
+                return Ok("Hotel added successfully");
+            return InternalServerError();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace HotelManagement.BAL
 
         public List<Hotel> GetAllHotels()
         {
-            return _hotelRepository.GetAllHotels().Where(h => h.IsActive == true).ToList();
+            return _hotelRepository.GetAllHotels().Where(h => h.IsActive == true).OrderBy(h => h.Name).ToList();
         }
 
         public bool AddHotel(Hotel hotel)

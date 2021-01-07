@@ -17,6 +17,7 @@ namespace HotelManagement.WebAPI
             // it is NOT necessary to register your controllers
             
             container.RegisterType<IHotelManager, HotelManager>();
+            container.RegisterType<IRoomManager, RoomManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);

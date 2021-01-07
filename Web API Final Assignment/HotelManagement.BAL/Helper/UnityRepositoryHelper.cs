@@ -14,6 +14,7 @@ namespace HotelManagement.BAL.Helper
         protected override void Initialize()
         {
             Container.RegisterType<IHotelRepository, HotelRepository>();
+            Container.RegisterType<IRoomRepository, RoomRepository>();
         }
     }
 }
