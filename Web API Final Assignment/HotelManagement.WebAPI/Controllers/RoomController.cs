@@ -20,7 +20,7 @@ namespace HotelManagement.WebAPI.Controllers
         }
 
         [ResponseType(typeof(List<Room>))]
-        [Route("api/room/{type?}/{name?}")]
+        [Route("api/room/search/{type?}/{name?}")]
         public IHttpActionResult Get(string type = null,string name = null)
         {
             var rooms = _roomManager.GetRooms(type,name);
@@ -30,6 +30,13 @@ namespace HotelManagement.WebAPI.Controllers
                 return NotFound();
             else
                 return Ok(rooms);
+        }
+
+        [Route("api/room/isavailable/{day}/{month}/{year}")]
+        public IHttpActionResult Get(string day,string month,string year)
+        {
+            string date = day + "/" + month + "/" + year;
+            return Ok(_roomManager.IsRoomAvailable(date));
         }
 
         public IHttpActionResult Post([FromBody]Room room)

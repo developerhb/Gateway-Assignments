@@ -18,6 +18,7 @@ namespace HotelManagement.WebAPI
             
             container.RegisterType<IHotelManager, HotelManager>();
             container.RegisterType<IRoomManager, RoomManager>();
+            container.RegisterType<IBookingManager, BookingManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);

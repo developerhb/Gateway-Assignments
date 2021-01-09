@@ -15,6 +15,7 @@ namespace HotelManagement.BAL.Helper
         {
             Container.RegisterType<IHotelRepository, HotelRepository>();
             Container.RegisterType<IRoomRepository, RoomRepository>();
+            Container.RegisterType<IBookingRepository, BookingRepository>();
         }
     }
 }

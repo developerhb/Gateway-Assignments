@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 
 namespace HotelManagement.BAL.Interface
 {
-    public interface IRoomManager
+    public interface IBookingManager
     {
-        List<Room> GetRooms(string type,string name);
+        bool BookRoom(Booking booking);
 
-        bool IsRoomAvailable(string date);
-
-        bool AddRoom(Room room);
+        bool UpdateBooking(string type, int id, string value);
     }
 }
