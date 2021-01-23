@@ -114,3 +114,11 @@ D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\obj\Debug\M
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\obj\Debug\MVC Project.csproj.CopyComplete
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\obj\Debug\MVC Project.dll
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\obj\Debug\MVC Project.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Business.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\BusinessEntities.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Data.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\BusinessEntities.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Business.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Business.dll.config
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Data.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Data.dll.config
