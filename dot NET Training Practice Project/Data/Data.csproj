@@ -52,10 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Context\DBContext.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Dealer.cs" />
+    <Compile Include="Models\Mechanic.cs" />
+    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Repository\Interface\" />
   </ItemGroup>
   <ItemGroup>

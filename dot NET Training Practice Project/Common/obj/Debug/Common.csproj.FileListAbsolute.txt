@@ -1,0 +1,5 @@
+D:\Gateway-Assignments\dot NET Training Practice Project\Common\bin\Debug\Common.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Common\bin\Debug\Common.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Gateway-Assignments\dot NET Training Practice Project\Common\obj\Debug\Common.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Common\obj\Debug\Common.pdb

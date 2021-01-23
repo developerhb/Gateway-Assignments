@@ -1,0 +1,12 @@
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\Data.dll.config
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\Data.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\Data.pdb
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\EntityFramework.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\EntityFramework.xml
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\obj\Debug\Data.csprojAssemblyReference.cache
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\obj\Debug\Data.csproj.CopyComplete
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\obj\Debug\Data.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Data\obj\Debug\Data.pdb
