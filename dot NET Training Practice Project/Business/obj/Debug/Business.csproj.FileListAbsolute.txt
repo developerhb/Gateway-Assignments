@@ -34,3 +34,5 @@ D:\Gateway-Assignments\dot NET Training Practice Project\Business\bin\Debug\Unit
 D:\Gateway-Assignments\dot NET Training Practice Project\Business\bin\Debug\Unity.Container.pdb
 D:\Gateway-Assignments\dot NET Training Practice Project\Business\bin\Debug\EntityFramework.xml
 D:\Gateway-Assignments\dot NET Training Practice Project\Business\obj\Debug\Business.csproj.CopyComplete
+D:\Gateway-Assignments\dot NET Training Practice Project\Business\bin\Debug\AutoMapper.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\Business\bin\Debug\AutoMapper.xml

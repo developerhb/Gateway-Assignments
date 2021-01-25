@@ -1,4 +1,5 @@
-﻿using Business.Interface;
+﻿using AutoMapper;
+using Business.Interface;
 using BusinessEntities;
 using Data.Models;
 using Data.Repository.Interface;
@@ -21,20 +22,18 @@ namespace Business
 
         public List<CustomerBusinessEntity> GetCustomers()
         {
-            var customers = _customerRepository.GetCustomers().ToList();
-            List<CustomerBusinessEntity> businessEntity = new List<CustomerBusinessEntity>();
-            CustomerBusinessEntity customerBusinessEntity = new CustomerBusinessEntity();
-            foreach (var customer in customers)
-            {
-                customerBusinessEntity.ID = customer.ID;
-                customerBusinessEntity.FirstName = customer.FirstName;
-                customerBusinessEntity.LastName = customer.LastName;
-                customerBusinessEntity.Email = customer.Email;
-                customerBusinessEntity.Contact = customer.Contact;
-                customerBusinessEntity.NumberOfVehicles = customer.Vehicles.Count();
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Customer, CustomerBusinessEntity>()
+            .ForMember(destination => destination.NumberOfVehicles, opts => opts.MapFrom(source => source.Vehicles.Count())));
+            IMapper mapper = config.CreateMapper();
 
-                businessEntity.Add(customerBusinessEntity);
-            }
+            var customers = _customerRepository.GetCustomers().ToList();
+            List<CustomerBusinessEntity> businessEntity = customers.Select(x => mapper.Map<Customer, CustomerBusinessEntity>(x)).ToList();
+            //CustomerBusinessEntity customerBusinessEntity = new CustomerBusinessEntity();
+            //foreach (var customer in customers)
+            //{
+                //mapper.Map(customer,customerBusinessEntity);
+                //businessEntity.Add(customerBusinessEntity);
+            //}
 
             return businessEntity;
         }

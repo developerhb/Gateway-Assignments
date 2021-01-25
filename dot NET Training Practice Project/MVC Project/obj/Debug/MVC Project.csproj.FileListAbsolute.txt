@@ -122,3 +122,5 @@ D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Busines
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Business.dll.config
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Data.pdb
 D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\Data.dll.config
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\AutoMapper.dll
+D:\Gateway-Assignments\dot NET Training Practice Project\MVC Project\bin\AutoMapper.xml
