@@ -78,9 +78,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerManager.cs" />
+    <Compile Include="DealerManager.cs" />
     <Compile Include="Interface\ICustomerManager.cs" />
+    <Compile Include="Interface\IDealerManager.cs" />
+    <Compile Include="Interface\IVehicleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository Helper\UnityRepositoryHelper.cs" />
+    <Compile Include="VehicleManager.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

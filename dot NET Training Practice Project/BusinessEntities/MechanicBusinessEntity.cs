@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    public class CustomerBusinessEntity
+    public class MechanicBusinessEntity
     {
         public int ID { get; set; }
+
+        public int DealerID { get; set; }
 
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
@@ -20,8 +22,5 @@ namespace BusinessEntities
         public string Email { get; set; }
 
         public string Contact { get; set; }
-
-        [Display(Name = "Number of Vehicels")]
-        public int NumberOfVehicles { get; set; }
     }
 }

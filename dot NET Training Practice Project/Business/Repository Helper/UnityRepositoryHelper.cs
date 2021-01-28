@@ -15,6 +15,9 @@ namespace Business.Repository_Helper
         protected override void Initialize()
         {
             Container.RegisterType<ICustomerRespository, CustomerRepository>();
+            Container.RegisterType<IVehicleRepository, VehicleRepository>();
+            Container.RegisterType<IDealerRepository, DealerRepository>();
+            Container.RegisterType<IMechanicRepository, MechanicRepository>();
         }
     }
 }

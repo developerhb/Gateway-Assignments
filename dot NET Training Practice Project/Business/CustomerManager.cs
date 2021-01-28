@@ -28,12 +28,6 @@ namespace Business
 
             var customers = _customerRepository.GetCustomers().ToList();
             List<CustomerBusinessEntity> businessEntity = customers.Select(x => mapper.Map<Customer, CustomerBusinessEntity>(x)).ToList();
-            //CustomerBusinessEntity customerBusinessEntity = new CustomerBusinessEntity();
-            //foreach (var customer in customers)
-            //{
-                //mapper.Map(customer,customerBusinessEntity);
-                //businessEntity.Add(customerBusinessEntity);
-            //}
 
             return businessEntity;
         }

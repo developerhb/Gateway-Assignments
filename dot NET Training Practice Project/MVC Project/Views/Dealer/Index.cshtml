@@ -1,10 +1,10 @@
-﻿@model IEnumerable<BusinessEntities.CustomerBusinessEntity>
+﻿@model IEnumerable<BusinessEntities.DealerBusinessEntity>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Customer Master</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -24,7 +24,7 @@
             @Html.DisplayNameFor(model => model.Contact)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NumberOfVehicles)
+            @Html.DisplayNameFor(model => model.NumberOfMechanics)
         </th>
         <th>Operations</th>
     </tr>
@@ -44,10 +44,10 @@
             @Html.DisplayFor(modelItem => item.Contact)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.NumberOfVehicles)
+            @Html.DisplayFor(modelItem => item.NumberOfMechanics)
         </td>
         <td>
-            @Html.ActionLink("View vehicles","Index","Vehicle",new { custID = item.ID},null) |
+            @Html.ActionLink("See all mechanics", "Index") |
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>

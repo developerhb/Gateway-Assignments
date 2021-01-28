@@ -13,7 +13,7 @@ namespace Data.Models
     {
         public int ID { get; set; }
 
-        public int MechanicID { get; set; }
+        public int DealerID { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 2)]

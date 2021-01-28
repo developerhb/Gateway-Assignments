@@ -17,6 +17,8 @@ namespace MVC_Project
             // it is NOT necessary to register your controllers
             
             container.RegisterType<ICustomerManager, CustomerManager>();
+            container.RegisterType<IVehicleManager, VehicleManager>();
+            container.RegisterType<IDealerManager, DealerManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
