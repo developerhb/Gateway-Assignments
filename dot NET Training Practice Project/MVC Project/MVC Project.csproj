@@ -185,6 +185,7 @@
     <Compile Include="Controllers\DealerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MechanicController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -254,6 +255,7 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Vehicle\Index.cshtml" />
     <Content Include="Views\Dealer\Index.cshtml" />
+    <Content Include="Views\Mechanic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -19,6 +19,7 @@ namespace MVC_Project
             container.RegisterType<ICustomerManager, CustomerManager>();
             container.RegisterType<IVehicleManager, VehicleManager>();
             container.RegisterType<IDealerManager, DealerManager>();
+            container.RegisterType<IMechanicManager, MechanicManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
