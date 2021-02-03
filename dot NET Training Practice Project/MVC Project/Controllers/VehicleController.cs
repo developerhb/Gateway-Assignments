@@ -24,7 +24,7 @@ namespace MVC_Project.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(int custID)
         {
             return View();
         }

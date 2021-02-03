@@ -47,9 +47,10 @@
             @Html.DisplayFor(modelItem => item.NumberOfVehicles)
         </td>
         <td>
-            @Html.ActionLink("View vehicles","Index","Vehicle",new { custID = item.ID},null) |
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Add vehicle", "Create", "Vehicle", new { custID = item.ID }, null) |
+            @Html.ActionLink("View vehicles", "Index", "Vehicle", new { custID = item.ID }, null) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
         </td>
     </tr>
 }
