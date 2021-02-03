@@ -15,20 +15,20 @@ namespace Data.Models
 
         [StringLength(50, MinimumLength = 2)]
         [Required]
-        [RegularExpression(@"^[A-Z][a-z]*$")]
+        [RegularExpression(@"^[A-Z][a-z]*$", ErrorMessage = "First name invalid")]
         public string FirstName { get; set; }
 
         [StringLength(50, MinimumLength = 2)]
         [Required]
-        [RegularExpression(@"^[A-Z]+([ '-][a-zA-Z]+)*$")]
+        [RegularExpression(@"^[A-Z][a-z]*$", ErrorMessage = "Last name invalid")]
         public string LastName { get; set; }
 
         [StringLength(60)]
         [Required]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Email address invalid")]
         public string Email { get; set; }
 
-        [Phone]
+        [Phone(ErrorMessage = "Not a valid phone number")]
         public string Contact { get; set; }
 
         public virtual ICollection<Vehicle> Vehicles { get; set; }

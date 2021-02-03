@@ -10,5 +10,7 @@ namespace Data.Repository.Interface
     public interface ICustomerRespository
     {
         IQueryable<Customer> GetCustomers();
+
+        bool AddCustomer(Customer customer);
     }
 }

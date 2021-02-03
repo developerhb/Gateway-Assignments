@@ -1,4 +1,5 @@
 ﻿using Business.Interface;
+using BusinessEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,20 @@ namespace MVC_Project.Controllers
         {
             var customers = _customerManager.GetCustomers();
             return View(customers);
+        }
+
+        // GET: Customer/Create
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(CustomerBusinessEntity businessEntity)
+        {
+            _customerManager.AddCustomer(businessEntity);
+            return RedirectToAction("Index");
         }
     }
 }

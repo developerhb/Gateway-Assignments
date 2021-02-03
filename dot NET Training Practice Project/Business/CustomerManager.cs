@@ -31,5 +31,14 @@ namespace Business
 
             return businessEntity;
         }
+
+        public bool AddCustomer(CustomerBusinessEntity businessEntity)
+        {
+            var customerConfig = new MapperConfiguration(cfg => cfg.CreateMap<CustomerBusinessEntity, Customer>());
+            IMapper customerMapper = customerConfig.CreateMapper();
+            Customer customer = customerMapper.Map<CustomerBusinessEntity, Customer>(businessEntity);
+
+            return _customerRepository.AddCustomer(customer);
+        }
     }
 }

@@ -22,5 +22,11 @@ namespace MVC_Project.Controllers
             var vehicles = _vehicleManager.GetVehicles(custID);
             return View(vehicles);
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }

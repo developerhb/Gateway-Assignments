@@ -10,5 +10,7 @@ namespace Business.Interface
     public interface ICustomerManager
     {
         List<CustomerBusinessEntity> GetCustomers();
+
+        bool AddCustomer(CustomerBusinessEntity businessEntity);
     }
 }

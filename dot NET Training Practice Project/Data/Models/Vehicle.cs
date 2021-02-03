@@ -25,7 +25,7 @@ namespace Data.Models
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        [RegularExpression(@"^[A-Za-z]+$")]
+        [RegularExpression(@"^[A-Za-z ]+$")]
         public string Model { get; set; }
 
         public virtual Customer Customer { get; set; }
