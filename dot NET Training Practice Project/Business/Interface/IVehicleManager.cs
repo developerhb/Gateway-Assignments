@@ -10,5 +10,7 @@ namespace Business.Interface
     public interface IVehicleManager
     {
         List<VehicleBusinessEntity> GetVehicles(int? custID);
+
+        bool AddVehicle(VehicleBusinessEntity businessEntity);
     }
 }

@@ -10,5 +10,7 @@ namespace Data.Repository.Interface
     public interface IDealerRepository
     {
         IQueryable<Dealer> GetDealers();
+
+        bool AddDealer(Dealer dealer, Mechanic mechanic);
     }
 }

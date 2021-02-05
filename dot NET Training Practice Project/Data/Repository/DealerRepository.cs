@@ -17,5 +17,14 @@ namespace Data.Repository
         {
             return db.Dealers;
         }
+
+        public bool AddDealer(Dealer dealer, Mechanic mechanic)
+        {
+            db.Dealers.Add(dealer);
+            List<Mechanic> mechanics = new List<Mechanic>();
+            mechanics.Add(mechanic);
+            dealer.Mechanics = mechanics;
+            return db.SaveChanges()>0;
+        }
     }
 }

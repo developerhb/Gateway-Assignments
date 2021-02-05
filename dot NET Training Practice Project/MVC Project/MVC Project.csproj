@@ -258,6 +258,7 @@
     <Content Include="Views\Mechanic\Index.cshtml" />
     <Content Include="Views\Vehicle\Create.cshtml" />
     <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Dealer\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

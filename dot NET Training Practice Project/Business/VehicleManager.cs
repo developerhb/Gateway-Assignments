@@ -34,5 +34,15 @@ namespace Business
 
             return businessEntity;
         }
+
+        public bool AddVehicle(VehicleBusinessEntity businessEntity)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<VehicleBusinessEntity, Vehicle>());
+            IMapper mapper = config.CreateMapper();
+
+            Vehicle vehicle = mapper.Map<VehicleBusinessEntity, Vehicle>(businessEntity);
+
+            return _vehicleRepository.AddVehicle(vehicle);
+        }
     }
 }

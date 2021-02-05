@@ -10,5 +10,7 @@ namespace Business.Interface
     public interface IDealerManager
     {
         List<DealerBusinessEntity> GetDealers();
+
+        bool AddDealer(DealerRegistration registration);
     }
 }

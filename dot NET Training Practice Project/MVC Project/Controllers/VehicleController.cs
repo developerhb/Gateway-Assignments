@@ -1,4 +1,5 @@
 ﻿using Business.Interface;
+using BusinessEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,16 @@ namespace MVC_Project.Controllers
         [HttpGet]
         public ActionResult Create(int custID)
         {
+            TempData["custID"] = custID;
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(VehicleBusinessEntity registration)
+        {
+            registration.CustomerID = Convert.ToInt32(TempData["custID"]);
+            _vehicleManager.AddVehicle(registration);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -31,5 +31,19 @@ namespace Business
 
             return businessEntity;
         }
+
+        public bool AddDealer(DealerRegistration registration)
+        {
+            var dealerConfig = new MapperConfiguration(cfg => cfg.CreateMap<DealerBusinessEntity, Dealer>());
+            var mechanicConfig = new MapperConfiguration(cfg => cfg.CreateMap<MechanicBusinessEntity, Mechanic>());
+
+            IMapper dealerMapper = dealerConfig.CreateMapper();
+            IMapper mechanicMapper = mechanicConfig.CreateMapper();
+
+            Dealer dealer = dealerMapper.Map<DealerBusinessEntity, Dealer>(registration.Dealer);
+            Mechanic mechanic = mechanicMapper.Map<MechanicBusinessEntity, Mechanic>(registration.Mechanic);
+
+            return _dealerRepository.AddDealer(dealer, mechanic);
+        }
     }
 }

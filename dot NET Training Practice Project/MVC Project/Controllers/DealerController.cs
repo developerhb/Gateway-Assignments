@@ -1,4 +1,5 @@
 ﻿using Business.Interface;
+using BusinessEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,18 @@ namespace MVC_Project.Controllers
         {
             var dealers = _dealerManager.GetDealers();
             return View(dealers);
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult Create(DealerRegistration registration)
+        {
+            _dealerManager.AddDealer(registration);
+            return RedirectToAction("Index");
         }
     }
 }

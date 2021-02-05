@@ -17,5 +17,11 @@ namespace Data.Repository
         {
             return db.Vehicles;
         }
+
+        public bool AddVehicle(Vehicle vehicle)
+        {
+            db.Vehicles.Add(vehicle);
+            return db.SaveChanges() > 0;
+        }
     }
 }

@@ -10,5 +10,7 @@ namespace Data.Repository.Interface
     public interface IVehicleRepository
     {
         IQueryable<Vehicle> GetVehicles();
+
+        bool AddVehicle(Vehicle vehicle);
     }
 }

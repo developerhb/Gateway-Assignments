@@ -20,7 +20,7 @@ namespace Data.Models
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        [RegularExpression(@"^[A-Z]+([ '-][a-zA-Z]+)*$")]
+        [RegularExpression(@"^[A-Z][a-z]*$")]
         public string LastName { get; set; }
 
         [Required]
