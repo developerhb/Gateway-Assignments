@@ -1,0 +1,6 @@
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\bin\Debug\BusinessEntities.dll
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\bin\Debug\BusinessEntities.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\obj\Debug\BusinessEntities.dll
+D:\Gateway-Assignments\dot NET Final Assignment\BusinessEntities\obj\Debug\BusinessEntities.pdb

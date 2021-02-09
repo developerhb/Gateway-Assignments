@@ -1,0 +1,51 @@
+﻿@using MVCApp.Models;
+@model IEnumerable<MVCApp.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>User Master</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            Address Type
+        </th>
+        <th>
+            Address
+        </th>
+        <th>Operations</th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Age)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Addresses.First().Type)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Addresses.First().Value)
+    </td>
+    <td>
+        @Html.ActionLink("See addresses", "Index", "Address", new { userID = item.ID }, null) |
+        @Html.ActionLink("Add address", "Create", "Address", new { userID = item.ID }, null)
+    </td>
+</tr>
+}
+
+</table>
