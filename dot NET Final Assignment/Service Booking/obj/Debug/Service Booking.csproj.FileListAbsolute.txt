@@ -85,3 +85,15 @@ D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\obj\Debug\Servic
 D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\obj\Debug\Service Booking.csproj.CopyComplete
 D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\obj\Debug\Service Booking.dll
 D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\obj\Debug\Service Booking.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Business.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\BusinessEntities.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Data.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\AutoMapper.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\EntityFramework.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\BusinessEntities.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Business.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Business.dll.config
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Data.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\Data.dll.config
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\AutoMapper.xml
+D:\Gateway-Assignments\dot NET Final Assignment\Service Booking\bin\EntityFramework.xml
