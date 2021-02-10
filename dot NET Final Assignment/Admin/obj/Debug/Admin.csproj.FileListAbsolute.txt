@@ -85,3 +85,15 @@ D:\Gateway-Assignments\dot NET Final Assignment\Admin\obj\Debug\Admin.csproj.Cor
 D:\Gateway-Assignments\dot NET Final Assignment\Admin\obj\Debug\Admin.csproj.CopyComplete
 D:\Gateway-Assignments\dot NET Final Assignment\Admin\obj\Debug\Admin.dll
 D:\Gateway-Assignments\dot NET Final Assignment\Admin\obj\Debug\Admin.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Business.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\BusinessEntities.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Data.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\AutoMapper.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\EntityFramework.dll
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\BusinessEntities.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Business.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Business.dll.config
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Data.pdb
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\Data.dll.config
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\AutoMapper.xml
+D:\Gateway-Assignments\dot NET Final Assignment\Admin\bin\EntityFramework.xml

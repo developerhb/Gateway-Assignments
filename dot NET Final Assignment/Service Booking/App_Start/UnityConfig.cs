@@ -17,6 +17,7 @@ namespace Service_Booking
             // it is NOT necessary to register your controllers
             
             container.RegisterType<ICustomerManager,CustomerManager>();
+            container.RegisterType<IVehicleManager, VehicleManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));

@@ -32,7 +32,7 @@ namespace Service_Booking.Controllers
             {
                 FormsAuthentication.SetAuthCookie(login.Email,false);
                 Session["user"] = _customerManager.GetCustomers().Where(x => x.Email.Equals(login.Email) && x.Password.Equals(login.Password)).First().ID;
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index","Vehicle");
             }
             else
             {
