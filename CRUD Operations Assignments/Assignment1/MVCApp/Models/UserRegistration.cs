@@ -7,8 +7,8 @@ namespace MVCApp.Models
 {
     public class UserRegistration
     {
-        public User User { get; set; }
+        public Users User { get; set; }
 
-        public Address Address { get; set; }
+        public Addresses Address { get; set; }
     }
 }

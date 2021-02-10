@@ -30,7 +30,7 @@ namespace MVCApp.Controllers
             var user = registration.User;
             var address = registration.Address;
             db.Users.Add(user);
-            List<Address> addresses = new List<Address>();
+            List<Addresses> addresses = new List<Addresses>();
             addresses.Add(address);
             user.Addresses = addresses;
             db.SaveChanges();

@@ -28,7 +28,7 @@ namespace MVCApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Address address)
+        public ActionResult Create(Addresses address)
         {
             address.UserID = Convert.ToInt32(TempData["user"]);
             db.Addresses.Add(address);

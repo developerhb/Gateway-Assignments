@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -133,10 +135,31 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\DBContext.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Address.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Address.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Address.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Addresses.cs">
+      <DependentUpon>Address.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>Address.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\UserRegistration.cs" />
+    <Compile Include="Models\Users.cs">
+      <DependentUpon>Address.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -148,8 +171,25 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\Address.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Address.edmx</DependentUpon>
+      <LastGenOutput>Address.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Address.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Address.edmx</DependentUpon>
+      <LastGenOutput>Address.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Address.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Address.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Address.edmx.diagram">
+      <DependentUpon>Address.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -195,6 +235,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
