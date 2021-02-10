@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PLxTmh3vdJEfcioOIVRT+uFVEq3dMFic5OkfE5EuQdEtr9w2BOCLFRWi3MG7ZglR6Ebot/0nWK89ekfE8dU6Lg==",
+  "success": true,
+  "projectFilePath": "D:\\Gateway-Assignments\\Microservices Assignments\\Assignment3\\Web.HttpAggregator\\Web.HttpAggregator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

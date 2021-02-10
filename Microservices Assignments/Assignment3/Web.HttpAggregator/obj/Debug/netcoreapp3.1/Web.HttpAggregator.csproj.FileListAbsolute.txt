@@ -1,0 +1,10 @@
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\bin\Debug\netcoreapp3.1\Web.HttpAggregator.exe
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.csprojAssemblyReference.cache
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.AssemblyInfoInputs.cache
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.AssemblyInfo.cs
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.RazorTargetAssemblyInfo.cache
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\staticwebassets\Web.HttpAggregator.StaticWebAssets.Manifest.cache
+D:\Gateway-Assignments\Microservices Assignments\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\staticwebassets\Web.HttpAggregator.StaticWebAssets.xml
