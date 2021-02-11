@@ -18,6 +18,8 @@ namespace Service_Booking
             
             container.RegisterType<ICustomerManager,CustomerManager>();
             container.RegisterType<IVehicleManager, VehicleManager>();
+            container.RegisterType<IMechnicManager,MechanicManager>();
+            container.RegisterType<IServiceManager,ServiceManager>();
             container.AddNewExtension<UnityRepositoryHelper>();
             
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));

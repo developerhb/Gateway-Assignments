@@ -16,6 +16,8 @@ namespace Business.RepositoryHelper
         {
             Container.RegisterType<ICustomerRepository, CustomerRepository>();
             Container.RegisterType<IVehicleRepository, VehicleRespository>();
+            Container.RegisterType<IMechanicRepository, MechanicRepository>();
+            Container.RegisterType<IServiceRepository, ServiceRepository>();
         }
     }
 }

@@ -64,7 +64,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CustomerRepository.cs" />
     <Compile Include="Repository\Interface\ICustomerRepository.cs" />
+    <Compile Include="Repository\Interface\IMechanicRepository.cs" />
+    <Compile Include="Repository\Interface\IServiceRepository.cs" />
     <Compile Include="Repository\Interface\IVehicleRepository.cs" />
+    <Compile Include="Repository\MechanicRepository.cs" />
+    <Compile Include="Repository\ServiceRepository.cs" />
     <Compile Include="Repository\VehicleRespository.cs" />
   </ItemGroup>
   <ItemGroup />
