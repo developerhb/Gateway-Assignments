@@ -208,25 +208,10 @@ namespace ProductManagement.Controllers
             return View(product);
         }
 
-        // GET: Product/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Product product = db.Products.Find(id);
-            if (product == null)
-            {
-                return HttpNotFound();
-            }
-            return View(product);
-        }
-
         // POST: Product/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public JsonResult Delete(int id)
         {
             // Delete record and images from folder
             try
@@ -249,7 +234,7 @@ namespace ProductManagement.Controllers
             {
                 logger.Error(ex.ToString());
             }
-            return RedirectToAction("Index");
+            return Json(true,JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
