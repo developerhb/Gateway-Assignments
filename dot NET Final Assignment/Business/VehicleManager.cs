@@ -34,5 +34,10 @@ namespace Business
             var vehicle = mapper.Map<VehicleBusinessEntity, Vehicle>(businessEntity);
             return _vehicleRepository.AddVehicle(vehicle);
         }
+
+        public bool DeleteVehicle(int ID)
+        {
+            return _vehicleRepository.DeleteVehicle(ID);
+        }
     }
 }

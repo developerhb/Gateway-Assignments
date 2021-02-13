@@ -12,5 +12,7 @@ namespace Business.Interface
         List<ServiceBusinessEntity> GetServices();
 
         bool AddService(ServiceBusinessEntity businessEntity);
+
+        bool BookService(ServiceBusinessEntity businessEntity);
     }
 }

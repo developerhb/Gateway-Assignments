@@ -12,5 +12,7 @@ namespace Business.Interface
         List<VehicleBusinessEntity> GetVehicles();
 
         bool AddVehicle(VehicleBusinessEntity businessEntity);
+
+        bool DeleteVehicle(int ID);
     }
 }

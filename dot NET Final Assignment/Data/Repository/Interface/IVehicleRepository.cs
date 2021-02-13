@@ -12,5 +12,7 @@ namespace Data.Repository.Interface
         IQueryable<Vehicle> GetVehicles();
 
         bool AddVehicle(Vehicle vehicle);
+
+        bool DeleteVehicle(int ID);
     }
 }

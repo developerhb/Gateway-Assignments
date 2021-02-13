@@ -41,5 +41,10 @@ namespace Service_Booking.Controllers
             _vehicleManager.AddVehicle(vehicle);
             return RedirectToAction("Index");
         }
+
+        public JsonResult Delete(int ID)
+        {
+            return Json(_vehicleManager.DeleteVehicle(ID),JsonRequestBehavior.AllowGet);
+        }
     }
 }

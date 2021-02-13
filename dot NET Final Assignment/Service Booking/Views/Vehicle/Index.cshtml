@@ -26,35 +26,58 @@
         <th>
             @Html.DisplayNameFor(model => model.ChessisNumber)
         </th>
-        <th></th>
+        <th>Operations</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CustomerID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LicensePlate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Make)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RegistrationDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChessisNumber)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LicensePlate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChessisNumber)
+            </td>
+            <td>
+                @Html.ActionLink("Book Service", "Book", "Booking")
+                <a href="#" onclick="Delele(' + @item.ID + ')">Delete</a>
+            </td>
+        </tr>
+    }
 
 </table>
+
+@section Scripts {
+    <script type="text/javascript">
+        function Delele(ID) {
+            var ans = confirm("Are you sure you want to delete this Vehicle?");
+            if (ans) {
+                $.ajax({
+                    url: "/Vehicle/Delete/" + ID,
+                    type: "POST",
+                    contentType: "application/json;charset=UTF-8",
+                    dataType: "json",
+                    success: function (result) {
+                        alert("Vehicle deleted successfully");
+                        window.location.href = "/Vehilce/Index";
+                    },
+                    error: function (errormessage) {
+                        alert("Something went wrong");
+                    }
+                });
+            }
+        }
+    </script>
+}

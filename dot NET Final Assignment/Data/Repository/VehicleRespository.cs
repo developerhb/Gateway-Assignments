@@ -22,5 +22,12 @@ namespace Data.Repository
             db.Vehicles.Add(vehicle);
             return db.SaveChanges() > 0;
         }
+
+        public bool DeleteVehicle(int ID)
+        {
+            var vehicle = db.Vehicles.Find(ID);
+            db.Vehicles.Remove(vehicle);
+            return db.SaveChanges() > 0;
+        }
     }
 }

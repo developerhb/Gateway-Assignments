@@ -22,5 +22,12 @@ namespace Data.Repository
             db.Services.Add(service);
             return db.SaveChanges() > 0;
         }
+
+        public bool BookService(Service service)
+        {
+            service.IsActive = false;
+            db.Entry(service).State = System.Data.Entity.EntityState.Modified;
+            return db.SaveChanges() > 0;
+        }
     }
 }

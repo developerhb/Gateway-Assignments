@@ -12,5 +12,7 @@ namespace Data.Repository.Interface
         IQueryable<Service> GetServices();
 
         bool AddService(Service service);
+
+        bool BookService(Service service);
     }
 }

@@ -34,5 +34,13 @@ namespace Business
             var mechanic = mapper.Map<MechanicBusinessEntity, Mechanic>(businessEntity);
             return _mechanicRepository.AddMechanic(mechanic);
         }
+
+        public List<ServiceBusinessEntity> GetServices(MechanicBusinessEntity mechanic)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Service, ServiceBusinessEntity>());
+            IMapper mapper = config.CreateMapper();
+            var services = _mechanicRepository.GetMechanics().Where(x => x.ID == mechanic.ID).First().Services;
+            return services.Select(x => mapper.Map<Service, ServiceBusinessEntity>(x)).ToList();
+        }
     }
 }

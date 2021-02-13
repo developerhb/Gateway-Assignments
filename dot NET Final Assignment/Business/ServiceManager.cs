@@ -34,5 +34,13 @@ namespace Business
             var service = mapper.Map<ServiceBusinessEntity, Service>(businessEntity);
             return _serviceRepository.AddService(service);
         }
+
+        public bool BookService(ServiceBusinessEntity businessEntity)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<ServiceBusinessEntity, Service>());
+            IMapper mapper = config.CreateMapper();
+            var service = mapper.Map<ServiceBusinessEntity, Service>(businessEntity);
+            return _serviceRepository.BookService(service);
+        }
     }
 }

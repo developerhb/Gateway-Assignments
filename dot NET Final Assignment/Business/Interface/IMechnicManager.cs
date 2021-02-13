@@ -12,5 +12,7 @@ namespace Business.Interface
         List<MechanicBusinessEntity> GetMechanics();
 
         bool AddMechanic(MechanicBusinessEntity businessEntity);
+
+        List<ServiceBusinessEntity> GetServices(MechanicBusinessEntity mechanic);
     }
 }
