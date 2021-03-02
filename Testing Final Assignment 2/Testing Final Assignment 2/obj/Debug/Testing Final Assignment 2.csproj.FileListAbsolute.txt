@@ -1,0 +1,7 @@
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\bin\Debug\Testing Final Assignment 2.exe.config
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\bin\Debug\Testing Final Assignment 2.exe
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\bin\Debug\Testing Final Assignment 2.pdb
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\obj\Debug\Testing Final Assignment 2.csprojAssemblyReference.cache
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\obj\Debug\Testing Final Assignment 2.csproj.CoreCompileInputs.cache
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\obj\Debug\Testing Final Assignment 2.exe
+D:\Assignments\Gateway-Assignments\Testing Final Assignment 2\obj\Debug\Testing Final Assignment 2.pdb
